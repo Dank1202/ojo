@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./autos.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icon"></i> 
+            <a href="./principal2.html" class="logo">Tuning<snap>Cars</snap></a>
+            <ul class="navbar">
+                <li><a href="./principal2.html">Incio</a></li>
+                <li><a href="./autos.html"class="active">Carros</a></li>
+                <li><a href="./motos.html">Motos</a></li>
+                <li><a href="./formulario.html">Contactanos</a></li>
+                <li><a href="./usuarios.html">Usuarios</a></li>
+            </ul>
+            <i class='bx bxs-search-alt-2' id="search-icon"></i>
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="Boton de busqueda">
+            </div>
+        </div>
+    </header>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="./carro1.png" alt="">
+                    </div>
+                    <p class="descripcion">Honda Civic 2017</p>
+                    <span class="precio">$ 450,000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="./sentra.png" alt="">
+                    </div>
+                    <p class="descripcion" id>Nissan Sentra </p>
+                    <span class="precio">$ 240,000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="./passat.png" alt="">
+                    </div>
+                    <p class="descripcion">Passat WV
+                         </p>
+                    <span class="precio">$ 250,000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="./accord.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Honda Accord
+
+                    </p>
+                    <span class="precio">$ 430,000</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="./imgojo.png" alt="">
+                    </div>
+                    <p class="descripcion">Auto donde mataron al Chino Antrax</p>
+                    <span class="precio">$ Indefinido</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="./autocj.png" alt="">
+                    </div>
+                    <p class="descripcion">Veiculo CJNG</p>
+                    <span class="precio">$ 500,000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="./autotrebol.png" alt="">
+                    </div>
+                    <p class="descripcion">Veiculo donde mataron al Trebol</p>
+                    <span class="precio">$ NO DISPONIBLE</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="./tzuru.png" alt="">
+                    </div>
+                    <p class="descripcion">Tzuru Tuneado</p>
+                    <span class="precio">$ 120,000</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="./civic.jpg" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">Cantidad</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./autos.js"></script>
+</html>
